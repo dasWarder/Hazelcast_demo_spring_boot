@@ -7,13 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @Table(name = "user_account")
-public class UserAccount {
+public class UserAccount implements Serializable {
 
     @Id
     @Column(name = "id")
